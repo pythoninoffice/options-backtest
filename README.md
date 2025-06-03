@@ -35,14 +35,3 @@ To run the application, execute the following command:
 streamlit run app.py
 ```
 The application will start.
-
-## Directory Structure
-option_backtest/
-│
-├── app.py # Main application file
-├── bt_engine.py # Backtesting engine logic
-├── config.py # Configuration settings
-├── options.py # Options-related functionalities
-├── strategies.py # Trading strategies implementation
-└── README.md # Project documentation
- 
