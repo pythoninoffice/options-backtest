@@ -29,8 +29,19 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 
+### Download Data
+Option chain data is required for backtesting. Below is the link to download SPY EOD option chain from 2019 to 2024.
+https://drive.google.com/file/d/1o_SGPxqcNz6PkPX34ZdJL3BYZfcjLY57/view?usp=drive_link
+
+
 ## Usage
-To run the application, execute the following command:
+To run the application, first download the data, then update the `DB_PATH` variable in `config.py` with the path to the downloaded data file.
+```bash
+DB_PATH = r'path_to_data\spy_2019_2024.db'
+
+```
+
+execute the following command:
 ```bash
 streamlit run app.py
 ```
