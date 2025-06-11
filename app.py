@@ -73,9 +73,9 @@ with st.sidebar:
         with col_c_p[1]:
             input_delta_threshold_1 = st.number_input('Delta threshold', min_value = 0.0, max_value = 1.0, value = 0.45, step=0.01, key='delta-1')
             input_delta_threshold_2 = st.number_input('', min_value = 0.0, max_value = 1.0, value = 0.45, step=0.01, key='delta-2')
-        with col_c_p[2]:
-            input_leg1_long_short = st.selectbox('Long/Short', ['Long', 'Short'], index=0, key='leg1_long_short')
-            input_leg2_long_short = st.selectbox('Long/Short', ['Long', 'Short'], index=0, key='leg2_long_short')
+        # with col_c_p[2]:
+        #     input_leg1_long_short = st.selectbox('Long/Short', ['Long', 'Short'], index=0, key='leg1_long_short')
+        #     input_leg2_long_short = st.selectbox('Long/Short', ['Long', 'Short'], index=0, key='leg2_long_short')
         input_l_s = st.selectbox('Long or Short?',['Long', 'Short']).upper()
         #aa = st.sidebar.number_input('Select delta throu', min_value = 0.0, max_value = 1.0, value = 0.5, step=0.01)
         input_num_days = st.number_input('Select a DTE', min_value = 0, max_value = 500, value = 30, step=1)
